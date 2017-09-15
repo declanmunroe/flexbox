@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexbox</title>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<style type="text/css">
+		
+		
+		body
+		{
+		    background-color: #F5D76E;
+		}
+		nav{
+			font-family: roboto;
+			
+			margin: 0 auto 0 auto;
+			width: 100%;
+			height: 200px;
+			display: flex;
+			flex-direction: column;
+			align-items:stretch;
+			border-radius: 10px;
+			padding-bottom: 250px;	
+		}
+				
+		a{
+			text-decoration: none;
+			color: white;
+			flex:1;
+			height: 30px;
+			font-family: Dosis;
+			padding:20px 20px 20px 20px;
+			text-align: center;
+			font-size: 2em;
+			border-bottom:1px solid white;
+
+		}
+		#logoNav{
+			font-size: 2em;
+			font-weight: bold;
+			}
+			
+			#landing
+			{
+			    width: 100%;
+			    display: flex;
+			    flex-direction: column;
+			    margin: 0 auto 0 auto;
+			    
+			}
+			
+			#landing_messege p
+			{
+			    /*flex: 1;*/
+			    color: red;
+			    padding:20px 20px 20px 20px;
+    			text-align: center;
+    			font-size: 4em;
+			}
+			
+			#landing_graphic img
+			{
+			    /*flex: 1;*/
+			    width: 100% ;
+			}
+			
+			.cards
+			{
+			    display: flex;
+			    width: 100%;
+			    flex-direction: column;
+			    /*justify-content: center;*/
+			    background-color: grey;
+			    margin-top: 5%;
+			    margin-bottom: 5%;
+			    
+			}
+			
+			.card
+			{
+			    padding: 20px 20px 20px 20px;
+			}
+			
+			.card img
+			{
+			    width: 100%;
+			}
+			
+			.card h2
+			{
+			    padding-top: 20px;
+			    padding-bottom: 20px;
+			    font-size: 2em;
+			}
+			
+			.card p
+			{
+			    font-family: dosis;
+			    font-size: 22px;
+			}
+
+		@media screen and (min-width: 700px){
+			nav{
+			display: flex;
+			flex-direction: row;
+			padding-bottom: 50px;
+			}
+			
+			a{
+			flex: 1;
+			border: none;
+			font-size: 1em;
+			
+
+			}
+			#logoNav{
+			flex: 6;
+			font-size: 2em;
+			text-align: left;
+			
+			}
+			
+			#landing
+			{
+			    
+			    display: flex;
+			    flex-direction: row;
+			    justify-content: center;
+			}
+			
+			#landing_messege
+			{
+			    flex: 1;
+			}
+			
+			#landing_graphic
+			{
+			    flex: 1;
+			}
+			
+			.cards
+			{
+			    display: flex;
+			    flex-direction: row;
+			}
+			
+			.card
+			{
+			    flex: 1;
+			}
+		}
+
+		</style>
+</head>
+<body>
+    
+    
+
+    	<nav>
+    		
+    			<a id="logoNav">CODE INSTITUTE</a>
+    			<a href="#">Home</a>
+    			<a href="#">Projects</a>
+    			<a href="#">About</a>
+    			<a href="#">Contact</a>
+    			<a href="#">Photos</a>
+    		
+    
+    	</nav>
+    	
+    	<section id = "landing">
+    	    <article id = "landing_messege">
+    	        <p>Make Creative Clever Fun Apps. Simple.</p>
+    	    </article>
+    	    <figure id = " landing_graphic">
+    	        <img src="img/laptop.png"></img>
+    	    </figure>
+    	</section>
+    	
+    	
+    	    <article class = "cards">
+    	        <artical class = "card">
+    	            <img src = "img/graphic1.png" alt = "design pic">
+    	            <h2>Web Info Sessions</h2>
+    	            <p>If you have questions about your career your in!</p>
+    	        </artical>
+    	        <artical class = "card">
+    	            <img src = "img/graphic2.png" alt = "design pic">
+    	            <h2>Web Info Sessions</h2>
+    	            <p>If you have questions about your career your in!</p>
+    	        </artical>
+    	        <artical class = "card">
+    	            <img src = "img/graphic3.png" alt = "design pic">
+    	            <h2>Web Info Sessions</h2>
+    	            <p>If you have questions about your career your in!</p>
+    	        </artical>
+    	    </article>
+    	
+
+
+</body>
+</html>
