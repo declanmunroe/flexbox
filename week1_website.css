@@ -1,43 +1,77 @@
+body 
+{
+    background-image: url("img/background.jpg");
+    background-size: cover;
+    font-family: Dosis;
+    
+}
+
 header
 {
-    background-color: grey;
+    background-color: #fddbab;
     display: flex;
     width: 100%;
     flex-direction: column;
+    align-items: center;
+    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 99;
 }
 
-figure img
+.logo img
 {
     display: flex;
-    padding: 20px 0 20px 0;
+    padding: 20px;
 }
 
 #title h2
 {
+    color: #ad7e54;
     font-size: 3em;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 20px 40px 20px;
 }
+
+.menu img
+{
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu a
+{
+    text-decoration: none;   
+}
+
+
 
 nav
 {
 	/*font-family: roboto;*/
-	background-color: #eee;
+	background-color: #c1272d;
 	margin: 0 auto 0 auto;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items:stretch;
-	border-radius: 10px;
-	padding: 0;	
+	/*border-radius: 10px;*/
+	margin-top: 51%;
+	position: fixed;
+	top: 0;
+	z-index: 0;
+	
+	
+    
 }
 				
 a
 {
 	text-decoration: none;
-	color: black;
+	color: white;
 	flex:1;
-	/*font-family: Dosis;*/
+	font-family: Dosis;
 	padding:20px 20px 20px 20px;
 	text-align: center;
 	font-size: 2em;
@@ -52,6 +86,9 @@ video
     flex-direction: row;
     margin: 0 auto 0 auto;
     justify-content: center;
+    border: 2px solid black;
+    /*padding-top: 250px;*/
+    
 }
 
 .images
@@ -63,11 +100,18 @@ video
     /*justify-content: center;*/
 }
 
+.image
+{
+    
+    padding: 20px;
+}
+
 
 
 .image img
 {
     width: 100%;
+    border: 2px solid black;
     
 }
 
@@ -76,19 +120,30 @@ video
 .image p
 {
     font-size: 1rem;
+    padding-top: 15px;
 }
 
 .image h2
 {
     font-size: 2rem;
+    padding-top: 10px;
 }
 
 @media screen and (min-width: 700px)
 {
+    header
+    {
+        display: flex;
+        flex-direction: row;
+    }
 	nav
 	{
 	display: flex;
 	flex-direction: row;
+	margin-top: 16%;
+	position: fixed;
+	top: 0;
+	z-index: 0;
 	}
 	
 	a
@@ -105,8 +160,8 @@ video
         flex-direction: row;
         margin: 0 auto 0 auto;
         justify-content: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        margin-top: 23%;
+        /*padding-top: 250px;*/
     }
     
     .images
@@ -123,4 +178,6 @@ video
         
         
     }
+    
+    
 }
